@@ -54,4 +54,4 @@ git clone https://gitlab.com/dwt1/shell-color-scripts.git
 makepkg -si
 # Installation von Zusatzapps
 echo "Installiere Textverarbeitung"
-paru -S texlive-most texstudio libreoffice-fresh ghostwriter qpdf okular
+yay -S texlive-most texstudio libreoffice-fresh ghostwriter qpdf okular
