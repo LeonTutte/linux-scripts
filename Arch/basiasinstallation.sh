@@ -43,3 +43,12 @@ echo "Klone und erstelle Yay fuer das AUR"
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
+echo "Aendere yay sudo zu doas"
+yay --sudo doas --save
+echo "Installiere Terminal inklusive Zusaetze"
+yay -Sq alacritty fish xterm ranger exa starship --noconfirm
+echo "Setzte Shell"
+chsh -s /bin/fish
+echo "Installiere Farbskripte für Login"
+git clone https://gitlab.com/dwt1/shell-color-scripts.git
+makepkg -si
