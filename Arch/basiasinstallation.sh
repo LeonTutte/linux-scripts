@@ -28,4 +28,16 @@ curl -s "https://archlinux.org/mirrorlist/?country=FR&country=GB&protocol=https&
 sed 's/#Server/Server/g' ~/mirrorlist_new >> ~/mirrorlist_new
 doas mv ~/mirrorlist_new /etc/pacman.d/mirrorlist
 echo "Suche nach Updates"
-doas pacman -Syyu
+doas pacman -Syyu --noconfirm
+echo "Raume Pacman auf"
+doas pacman -Scq --noconfirm
+# Installation der Basispakete
+echo "Installiere Basispakete"
+doas pacman -Sq base-devel git emacs nano neovim vim vi pacman-contrib --noconfirm
+# Installation von Yay fuer AUR
+echo "Wechsle ins Gitverzeichnis"
+cd ~/git
+echo "Klone und erstelle Yay fuer das AUR"
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
