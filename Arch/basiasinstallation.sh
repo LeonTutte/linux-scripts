@@ -6,7 +6,7 @@
 # Leon Tutte 
 #
 # Beschreibung
-# Dieses Skript setzt eine funktionierende Internetverbindung und einen "normalen" Benutzer voraus.
+# Dieses Skript setzt eine funktionierende Internetverbindung und einen "normalen" Benutzer voraus, der das Skript ausführt.
 #
 # Abhängigkeiten
 # Für dieses Skript müssen folgende Programme bereits installiert und konfiguriert sein.
