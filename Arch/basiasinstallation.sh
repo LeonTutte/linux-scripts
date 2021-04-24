@@ -54,4 +54,6 @@ git clone https://gitlab.com/dwt1/shell-color-scripts.git
 makepkg -si
 # Installation von Zusatzapps
 echo "Installiere Textverarbeitung"
-yay -S texlive-most texstudio libreoffice-fresh ghostwriter qpdf okular
+yay -S texlive-most texstudio libreoffice-fresh ghostwriter qpdf okular  --noconfirm
+echo "Installiere Hintergrundpakete"
+yay -S wallpapers-tuxedo wallpapers-infinity-book mate-wallpapers muser-wallpapers lxde-wallpapers gnome-wallpapers jwm-wallpapers fluxbox-wallpapers elementary-wallpapers deepin-wallpapers budgie-wallpapers awesome-wallpapers plasma-workspace-wallpapers --noconfirm
