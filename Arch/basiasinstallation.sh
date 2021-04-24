@@ -34,6 +34,8 @@ doas pacman -Scq --noconfirm
 # Installation der Basispakete
 echo "Installiere Basispakete"
 doas pacman -Sq base-devel git emacs nano neovim vim vi pacman-contrib --noconfirm
+echo "Raume Pacman auf"
+doas paccache -r
 # Installation von Yay fuer AUR
 echo "Wechsle ins Gitverzeichnis"
 cd ~/git
