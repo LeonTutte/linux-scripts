@@ -1,3 +1,3 @@
 # Linux Scripts
 
-Hier liegen meine Linuxspezifischen Skripts und Konfigurationen.
+Custom Scripts for all purposes
